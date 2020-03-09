@@ -1,0 +1,26 @@
+<a:declarativeAction actionName="PostalCode">
+    <a:textInput
+        autocomplete="${'new_password'}"
+        textInputType="${'password'}"
+        widthNamed="${'medium'}"
+        maxLength="8"
+        id="${addCardForm.formControls[card_postal_code].fieldId}_${loop.index}"
+        cssClass="form-control"
+        data-id="${addCardForm.formControls[card_postal_code].fieldId}_${loop.index}"
+        data-field-validators="${addCardForm.formControls[card_postal_code].getValidatorsAsJSON()}"
+        placeholder="${addCardForm.formControls[card_postal_code].placeholder}" />
+</a:declarativeAction>
+
+
+<a:declarativeAction actionName="SecurityCode">
+    <a:textInput
+        autocomplete="${'new_password'}"
+        textInputType="${'password'}"
+        cssClass="form-control number-only"
+        widthNamed="${'base'}"
+        maxLength="3"
+        id="${addCardForm.formControls[card_cvv].fieldId}_${loop.index}"
+        placeholder="${addCardForm.formControls[card_cvv].placeholder}"
+        data-id="${addCardForm.formControls[card_cvv].fieldId}_${loop.index}"
+        data-field-validators="${addCardForm.formControls[card_cvv].getValidatorsAsJSON()}" />
+</a:declarativeAction>
